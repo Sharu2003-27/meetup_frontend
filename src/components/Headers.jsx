@@ -6,21 +6,23 @@ function Headers({ search, setSearch }) {
 
   return (
     <>
-      <nav className="navbar bg-body-tertiary">
-        <div className="container-fluid d-flex justify-content-between align-items-center">
+    <div className="p-5">
+      <nav className="navbar">
+        <div className="d-flex justify-content-start">
           <NavLink className="navbar-brand" to="/">
             <img
               src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSZrefOTIegvN-biOkMpPzGqVIY2jjL2BBmA&s"
               alt="Meetup Logo"
               width="190"
-              height="80"
-              style={{ marginRight: "10px" }}
+              height="90"
+              className="me-2"
             />
           </NavLink>
-
-          <form className="d-flex align-items-center" role="search">
+          </div>
+          <div>
+          <form className="d-flex ms-auto" role="search">
             <input
-              className="form-control me-3"
+              className="form-control"
               data-bs-theme="dark"
               type="search"
               placeholder="Search by title and tags"
@@ -32,6 +34,7 @@ function Headers({ search, setSearch }) {
         </div>
       </nav>
       <hr />
+      </div>
     </>
   );
 }

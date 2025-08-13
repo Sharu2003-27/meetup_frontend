@@ -9,13 +9,13 @@ import { Link} from 'react-router-dom';
 
   return (
         <>
-        {loading && <p>Loading...</p>}
-        {error && <p>Error in fetching data.</p>}
-          <div className="container">
-            <div className="d-flex justify-content-between align-items-center my-4">
+        {loading && <p className="text-center mt-3">Loading...</p>}
+        {error && <p className="text-center">Error in fetching data.</p>}
+          <div className="px-5">
+            <div className="d-flex justify-content-between align-items-center">
                 <h1 className="mb-0">Meetup Events</h1>
                 <div className="d-flex align-items-center">
-                <label htmlFor="eventType" className="me-2"></label>
+                <label htmlFor="eventType" className="me-3"></label>
                 <select id="eventType" className="form-select w-auto" value={filterType}
                  onChange={(e) => setFilterType(e.target.value)}
 >
@@ -30,7 +30,7 @@ import { Link} from 'react-router-dom';
             <section className="row">
              { 
                events?.map((event) => (
-                  <div key={event._id} className="col-md-4 mb-4">
+                  <div key={event._id} className="col-md-4 p-5">
                   
                   <div className="card h-100">
                     <div className="position-relative">
