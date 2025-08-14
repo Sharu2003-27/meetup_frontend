@@ -30,7 +30,7 @@ function App() {
      if (filterType !== "Both") {
       updatedEvents = updatedEvents.filter(
         (event) => event.eventType === filterType
-      );
+      );  
     }
 
     setFilteredEvents(updatedEvents);

@@ -6,7 +6,7 @@ function Headers({ search, setSearch }) {
 
   return (
     <>
-    <div className="p-5">
+    <div className="px-5 mt-3">
       <nav className="navbar">
         <div className="d-flex justify-content-start">
           <NavLink className="navbar-brand" to="/">

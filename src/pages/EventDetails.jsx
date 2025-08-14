@@ -9,12 +9,12 @@ const EventDetails = () => {
     return (
         <>
             <Headers />
-            {loading && <p className="text-center mt-3">Loading...</p>}
+            {loading && <p className="text-center mt-2">Loading...</p>}
             {error && <p className="text-center">Error in fetching event details</p>}
             {data && (
-        <div className="px-5">
+        <div className="px-5 mt-3">
           <div className="row">
-            <div className="col-lg-8 col-md-7 col-12">
+            <div className="col-lg-8 col-md-6 col-12">
               <h1>{data.title}</h1>
               <p className="mb-1">
                 Hosted By : <br />
@@ -23,23 +23,30 @@ const EventDetails = () => {
               <img
                 src={data.imageUrl}
                 alt={data.title}
-                className="img-fluid p-4 rounded"
+                className="img-fluid rounded my-3"
+                 style={{
+                   display: "block",
+                   marginLeft: 0,
+                   maxHeight: "350px",
+                   maxWidth: "450px",
+                   width: "100%"
+                }}
               />
               <p className="mb-1">
-                <h3>Details: </h3>
+                <h4>Details: </h4>
                 {data.details}
               </p>
-              <h3 className="mt-3">Additional Information:</h3>
+              <h4 className="py-1">Additional Information:</h4>
               <p className="mb-1">
                 <strong>Dress Code: </strong>
                 {data.dressCode}
               </p>
-              <h3>Event Tags:</h3>
+              <h4 className="py-1">Event Tags:</h4>
               <div className="d-flex flex-wrap gap-2">
                 {data.eventTags.map((tag, index) => (
                   <span
                     key={index}
-                    className="badge rounded-pill bg-danger text-white"
+                    className="badge rounded-pill bg-danger text-white py-2"
                   >
                     {tag}
                   </span>
