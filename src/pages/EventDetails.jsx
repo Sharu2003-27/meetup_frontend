@@ -66,7 +66,7 @@ const EventDetails = () => {
                 </p>
               </div>
 
-              <div className="p-3">
+              <div className="my-3">
                 <h4 className="mb-3">
                   Speakers: ({data.speakers.length})
                 </h4>
