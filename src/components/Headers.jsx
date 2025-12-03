@@ -1,6 +1,4 @@
  import {  NavLink } from "react-router-dom";
-// import { useState } from 'react'
-// import  useFetch  from "../useFetch"
 
 function Headers({ search, setSearch }) {
 

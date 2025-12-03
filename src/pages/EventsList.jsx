@@ -1,6 +1,5 @@
-// import { useState, useEffect } from "react";
 import useFetch from "../useFetch";
-import { Link} from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
  function EventsList({ events, filterType, setFilterType }) {
 

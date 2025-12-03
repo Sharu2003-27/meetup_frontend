@@ -1,12 +1,77 @@
-# React + Vite
+# Meetup App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A full-stack event management application where users can browse events, search by specific tags or titles, filter by event type, and view detailed information including speakers and venue details. Built with a React frontend, Express/Node backend, and MongoDB database.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Demo Link
 
-## Expanding the ESLint configuration
+[Live Demo](https://meetup-frontend-xi.vercel.app/)  
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## Quick Start
+
+```
+git clone https://github.com/Sharu2003-27/meetup_frontend.git
+cd <meetup_frontend>
+npm install
+npm run dev 
+```
+
+## Technologies
+- React JS
+- CSS
+- React Router
+- Node.js
+- Express
+- MongoDB
+- CORS
+
+## Demo Video
+Watch a walkthrough (5 minutes) of all major features of this app:
+[Loom Video Link]()
+
+## Features
+
+### Event Listings
+- Displays key details: Event Title, Date, and Type (Online/Offline)
+- Visual thumbnails for every event
+- responsive and user-friendly card layout
+
+### Search and Filtering
+- Filter: Dropdown to filter events by Type (Online, Offline, Both)
+- Search: Real-time search functionality by Event Title and Tags
+
+### Event Details
+- Comprehensive Info: Topic, description, session timings, and detailed pricing
+- Speakers: Section displaying speaker names, designations, and images
+- Venue: Address details or link for online events
+- Tags: Categorization tags (e.g., Marketing, Digital, Tech) displayed on the page
+
+---
+
+## API Reference
+
+### **GET /events**<br>	 
+List all events<br>	 
+Sample Response:<br>
+```[{ _id, title, date, eventType, thumbnail, ...}, ...]```
+
+### **GET /events/:eventId**<br>	 	
+Get details for a specific event<br>		
+Sample Response:<br>
+```{ _id, title, description, speakers, pricing, venue, ... }```
+
+### **POST /events**<br> 	
+Create a new event<br>	
+Sample Response:<br>
+```{ _id, title, message, ... }```
+
+### **POST /events/:eventId/speakers**<br>  	
+Add a speaker to an existing event<br> 	 
+Sample Response:<br> 
+```{ name, message, event, designation, imageUrl }```
+
+## Contact
+For bugs or feature requests, please reach out to sharayu.borude27@gmai.com
