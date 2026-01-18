@@ -35,19 +35,19 @@ Watch a walkthrough (5 minutes) of all major features of this app:
 ## Features
 
 ### Event Listings
-- Displays key details: Event Title, Date, and Type (Online/Offline)
-- Visual thumbnails for every event
-- responsive and user-friendly card layout
+- Displays key event details including title, date, and event type (Online/Offline)
+- Shows visual thumbnails for each event
+- Presents events in a responsive and user-friendly card layout
 
 ### Search and Filtering
-- Filter: Dropdown to filter events by Type (Online, Offline, Both)
-- Search: Real-time search functionality by Event Title and Tags
+- Filters events by type using a dropdown (Online, Offline, Both)
+- Searches events by title and tags in real time
 
 ### Event Details
-- Comprehensive Info: Topic, description, session timings, and detailed pricing
-- Speakers: Section displaying speaker names, designations, and images
-- Venue: Address details or link for online events
-- Tags: Categorization tags (e.g., Marketing, Digital, Tech) displayed on the page
+- Displays comprehensive event information including topic, description, session timings, and pricing
+- Shows speaker details such as name, designation, and image
+- Displays venue address or online meeting link based on event type
+- Displays categorization tags such as Marketing, Digital, and Tech
 
 ---
 
