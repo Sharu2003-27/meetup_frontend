@@ -74,4 +74,4 @@ Sample Response:<br>
 ```{ name, message, event, designation, imageUrl }```
 
 ## Contact
-For bugs or feature requests, please reach out to sharayu.borude27@gmai.com
+For bugs or feature requests, please reach out to sharayu.borude27@gmail.com
